@@ -1,0 +1,88 @@
+@media(max-width:768px){
+    .hero {
+  min-height: 35vh;
+  background: linear-gradient(45deg, #000, #0000001d),
+    url(https://thepixelcurve.com/wp/edubin/wp-content/uploads/2020/10/12508NN-1536x850.jpg)
+      no-repeat center;
+  background-size: cover; 
+}
+.platform{
+    flex-direction: column;
+}
+
+.platform-left{
+    gap:20px;
+}
+.about{
+    flex-direction: column;
+}
+.facility {
+  height: 85vh;
+  flex-direction: column;
+} 
+.facilities{
+    flex-direction: column;
+}
+.teacherFlex {
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.ourCourses{
+    padding: 30px;
+}
+.coursesFlex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.coursesFlex>div{
+    width: 100%;
+}
+.free{
+    top: 50%;
+    left:80%;
+}
+.coursesFlex img{
+    width: 100%;
+}
+.coursesFlex>div{
+    width: 100%;
+}
+.coursesFlex h3 {
+  font-size: 20px;
+  margin-left: 3px;
+}
+.feedbackProfiles>div{
+    display: flex;
+}
+.news>div{
+    flex-direction: column;
+}
+.footer{
+    flex-wrap: wrap;
+}
+}
+
+
+@media(max-width:576px){
+    
+    .platform-right{
+        flex-wrap: wrap;
+    }
+    .about{
+        padding: 30px;
+    }
+    .apply{
+        padding: 30px;
+    }
+    .teacherFlex{
+        padding: 30px;
+    }
+.news{
+    padding: 30px;
+}
+    .books{
+      flex-wrap: wrap;
+        
+    }
+}

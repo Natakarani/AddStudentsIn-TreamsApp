@@ -1,0 +1,749 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+header img {
+  width: 180px;
+}
+header nav ul {
+  display: flex; /*this one will keeps all child items at the same line like row 
+    direction and we can change direction also like row and column*/
+  list-style-type: none;
+  gap: 30px;
+}
+header ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #000;
+  transition: 0.6s;
+}
+header nav ul li a:hover {
+  color: royalblue;
+}
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(45deg, #000, #0000001d),
+    url(https://thepixelcurve.com/wp/edubin/wp-content/uploads/2020/10/12508NN-1536x850.jpg)
+      no-repeat center;
+  background-size: cover;
+  color: white;
+  padding: 4%;
+}
+.hero-text .heading {
+  font-size: 3.8rem;
+}
+.btns {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+}
+.btns button {
+  border: none;
+  padding: 15px;
+  font-size: 1.15rem;
+  border-radius: 5px;
+  min-width: 150px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+.btns button:first-child {
+  background-color: #fc800b;
+}
+.btns button:last-child {
+  background-color: white;
+}
+.btns button:last-child:hover,
+.btns button:first-child:hover {
+  background-color: #1c1f2a;
+  color: white;
+}
+.subtitle {
+  font-size: 1.2rem;
+}
+.platform {
+  background-color: #09237f;
+  color: #fff;
+  display: flex;
+  align-items: space-between;
+  justify-content: center;
+  padding: 6%;
+  width: 80%;
+  margin: auto;
+  transform: translateY(-150px);
+  border-radius: 20px;
+}
+.platform-left {
+  font-size: 21px;
+  flex: 1;
+}
+.platform-right {
+  display: flex;
+  flex: 3;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  /* grid-area: 20px; */
+  gap: 20px;
+}
+.platform-card img {
+  width: 100px;
+  height: 100px;
+}
+.platform-card {
+  flex: 1;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+}
+.platform-card:nth-child(1) {
+  background-color: lightgreen;
+}
+.platform-card:nth-child(2) {
+  background-color: tomato;
+}
+.platform-card:nth-child(3) {
+  background-color: rgb(53, 116, 251);
+}
+/*about*/
+.about {
+  display: flex;
+  background-color: #f8f4f4;
+  gap: 40px;
+  padding: 90px;
+}
+.about-left {
+  flex: 1;
+}
+.about-right {
+  flex: 1;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 7%;
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 65, 0.2) 0px 8px 24px;
+  padding: 4%;
+  background: linear-gradient(#ffffffe1, #fffffff3),
+    url(https://img.freepik.com/premium-photo/group-students-with-books-isolated-white-background_488220-10137.jpg?w=740)
+      no-repeat left bottom;
+}
+.about-right i {
+  color: #fc800b;
+}
+.event-card h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.divider {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  line-height: 1.9;
+}
+.event-card p {
+  color: gray;
+}
+.event-card h2:hover {
+  color: #fc800b;
+}
+.icons {
+  display: flex;
+  gap: 20px;
+}
+.about-left p {
+  margin-top: 30px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+.about-left h1 {
+  font-size: 2.8rem;
+}
+.tag {
+  position: relative;
+  width: fit-content;
+  margin-bottom: 30px;
+}
+.tag::before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 5px;
+  background-color: #fc800b;
+  bottom: -10px;
+  left: 0;
+}
+.main-btn {
+  border: none;
+  min-width: 150px;
+  padding: 15px;
+  margin-top: 20px;
+  background-color: #fc800b;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/*facility*/
+.facility {
+  background: url(../images/black.jpg) no-repeat top;
+  background-size: cover;
+  width: 100%;
+  height: 99vh;
+  position: relative;
+}
+.facilityFlex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.facilityFlex > div > p:nth-child(1) {
+  background: rgba(247, 246, 246, 0.6);
+  position: absolute;
+  background-color: rgb(115, 0, 255);
+  width: 40px;
+  height: 40px;
+  top: 40%;
+  left: 25%;
+  border-radius: 50%;
+  box-shadow: 5px 5px 13px white, -5px -5px 13px white;
+}
+.facilities > div > div > h3 {
+  font-size: 25px;
+  text-transform: capitalize;
+}
+.facilityFlex > div:nth-child(2) h2 {
+  font-size: 45px;
+  text-transform: capitalize;
+}
+.facilityFlex > div:nth-child(2) {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+.facilities {
+  color: rgb(245, 242, 239);
+  padding: 80px 170px 10px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-color: rgba(4, 4, 119, 0.5);
+}
+.facilities img {
+  width: 60px;
+  height: 60px;
+}
+.facilities h2 {
+  font-size: 30px;
+}
+.facilities > div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.facilities > div > div > p {
+  margin-top: 11px;
+}
+.facilities > div > div {
+  line-height: 1.5;
+}
+
+.facilityFlex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 300px;
+  justify-content: space-between;
+}
+/*apply*/
+
+.apply {
+  padding: 8% 10%;
+}
+.applyFlex h1 {
+  font-size: 40px;
+}
+.applyFlex {
+  display: flex;
+  gap: 50px;
+  background-color: #09237f;
+  padding: 4%;
+  color: white;
+}
+.applyFlex > div {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.applyFlex button {
+  background-color: #fc800b;
+  max-width: 150px;
+  padding: 3.5% 28px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+/*courses*/
+.ourCourses {
+  background-color: #f8f4f4;
+  padding: 80px 120px;
+}
+.courses h3 {
+  font-size: 20px;
+  position: relative;
+}
+.courses h3::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 50px;
+  height: 5px;
+  background-color: #fc800b;
+}
+.courses h1 {
+  margin-top: 40px;
+  margin-bottom: 70px;
+  font-size: 45px;
+}
+.coursesFlex {
+  position: relative;
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 30px;
+  line-height: 1.8;
+}
+.coursesFlex > div {
+  float: 1;
+  border-radius: 5px;
+  background-color: white;
+  padding: 0px 0px 30px 0px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.image {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  width: 380px;
+}
+.coursesFlex > div {
+  position: relative;
+}
+.coursesFlex h3 {
+  font-size: 22px;
+  margin-top: 50px;
+  text-transform: capitalize;
+  margin-left: 30px;
+}
+.coursesFlex > h4 {
+  background-color: red;
+  width: 50%;
+  height: 20px;
+}
+.programming {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  background-color: #fc800b;
+  padding: 3px 10px;
+  max-width: 35%;
+
+  font-size: 13px;
+}
+.coursesData {
+  display: flex;
+  gap: 14px;
+  margin-left: 30px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.coursesData i {
+  color: #fc800b;
+  font-size: 20px;
+}
+.free {
+  position: absolute;
+  top: 38%;
+  left: 70.5%;
+  background-color: #fc800b;
+  padding: 17px;
+  border-radius: 100px;
+}
+.profileData {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 0 30px;
+}
+
+.profileData img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+.profileData > div:first-child {
+  display: flex;
+  gap: 10px;
+}
+.messagesData {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.messagesData i {
+  color: #fc800b;
+}
+
+/*teachers*/
+.teacherFlex {
+  display: flex;
+  gap: 90px;
+  padding: 9% 8% 8% 10%;
+  background-color: #f8f4f4;
+}
+.teacherContent {
+  width: 100%;
+}
+.teacher-right-flex {
+  width: 100%;
+}
+.teacherFlex > div:first-child h3 {
+  font-size: 20px;
+  position: relative;
+}
+.teacherFlex > div:first-child h3::before {
+  content: "";
+  position: absolute;
+  width: 10%;
+  top: 35px;
+  height: 3px;
+  background-color: #fc800b;
+}
+.teacherFlex > div:first-child h1 {
+  font-size: 50px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.teacherFlex > div:first-child {
+  flex: 2;
+}
+.teacherFlex > div:first-child p {
+  line-height: 2;
+  margin-bottom: 17px;
+}
+.teacherFlex > div:last-child {
+  flex: 2;
+}
+.teacherFlex button {
+  background-color: #fc800b;
+  padding: 17px 26px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.teacher-right-flex img {
+  width: 90%;
+  height: 90%;
+  position: relative;
+  bottom: -110px;
+  left: 15px;
+}
+.teacher-right-flex > div:first-child {
+  margin-top: -95px;
+  margin-bottom: 100px;
+}
+.teacher-right-flex > div:last-child {
+  margin-top: -95px;
+  margin-bottom: 100px;
+}
+.teacher-right-flex {
+  display: flex;
+}
+.teacher-right-flex-white {
+  background-color: white;
+  text-align: center;
+  padding: 10px 10px 13px 10px;
+  margin-left: 50px;
+  min-width: 180px;
+  position: absolute;
+  transition: all 2s;
+  transform-origin: bottom;
+}
+.teacher-right-flex-white h3:hover,
+.teacher-right-flex-white p:hover,
+.teacher-right-flex-white i:hover {
+  color: #fc800b;
+}
+.teacher-right-flex-white:hover i {
+  display: flex;
+}
+.teacher-right-flex-white > div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.teacher-right-flex-white i {
+  display: none;
+}
+
+/*feedback*/
+.feedback {
+  background: url(../images/black.jpg) no-repeat center;
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+
+.feedback > div {
+  padding: 10%;
+  background-color: rgba(22, 4, 87, 0.644);
+}
+.feedback > div > h3 {
+  position: relative;
+}
+.feedback > div > h1 {
+  margin-top: 30px;
+  font-size: 50px;
+}
+.feedback > div > h3::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 3%;
+  height: 3px;
+  background-color: #fc800b;
+}
+.feedbackFlex {
+  flex-wrap: wrap;
+  display: flex;
+  padding-top: 100px;
+  gap: 40px;
+}
+.feedbackFlex > div > img {
+  height: 100px;
+  width: 100px;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.feedbackProfiles {
+  display: flex;
+  flex: 1;
+  position: relative;
+  gap: 36px;
+  line-height: 1.7;
+}
+.feedbackProfiles > div {
+  margin-top: 24px;
+}
+.feedbackProfiles > i {
+  position: absolute;
+  top: -20px;
+  left: 67px;
+  background-color: #fc800b;
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  max-height: 50px;
+  padding: 14px;
+  border-radius: 50px;
+}
+
+/*books*/
+.publications {
+  background-color: #f8f4f4;
+  padding: 4% 9% 7%;
+}
+.publications > div > div img {
+  width: 150px;
+  height: 150px;
+}
+.publications > div h2 {
+  position: relative;
+}
+.publications > div h2::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  width: 50px;
+  height: 3px;
+  background-color: hsl(29, 98%, 52%);
+}
+.publications > div h1 {
+  margin-top: 20px;
+  font-size: 50px;
+}
+.publications1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.publications1 button {
+  font-size: 15px;
+  border-radius: 4px;
+  background-color: hsl(29, 98%, 52%);
+  max-height: 50px;
+  padding: 0 50px;
+  border: none;
+  outline: none;
+}
+.books {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.books > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+.books {
+  position: relative;
+}
+.books img {
+  border: 20px solid rgb(228, 223, 223);
+}
+
+.books > div > p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(4, 41, 143, 0.597);
+  width: 13%;
+  height: 70%;
+  display: none;
+  transition: 2s;
+}
+.books:hover p {
+  display: block;
+}
+
+/*news*/
+.news {
+  padding: 8% 10%;
+  display: flex;
+  flex-direction: column;
+}
+.news > h3 {
+  position: relative;
+}
+.news > h3::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  width: 44px;
+  height: 4px;
+  background-color: #fc800b;
+}
+.news h1 {
+  margin-top: 29px;
+  font-size: 50px;
+}
+.news > div {
+  margin-top: 50px;
+  display: flex;
+  gap: 24px;
+}
+.news img {
+  width: 100%;
+  height: 90%;
+}
+.newsProfile {
+  display: flex;
+  gap: 40px;
+}
+.newsProfile > div {
+  display: flex;
+  gap: 10px;
+}
+.newsProfile > div > i {
+  color: #fc800b;
+}
+.news > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.newsProfile > div > p {
+  color: grey;
+}
+/*footer*/
+footer {
+  color: white;
+}
+.footer {
+  display: flex;
+  background-color: rgb(9, 29, 116);
+  padding: 70px 100px;
+  gap: 50px;
+}
+.footer i {
+  color: rgb(180, 180, 27);
+  font-size: 14px;
+}
+.contact,
+.support,
+.features {
+  flex: 1;
+}
+.edubin {
+  flex: 2;
+}
+.edubin img {
+  width: 240px;
+}
+.edubin i {
+  color: white;
+  background-color: black;
+  padding: 10px;
+  border-radius: 50%;
+}
+.edubin > div {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+.footer > div:nth-child(1),
+.footer > div:nth-child(2),
+.footer > div:nth-child(3),
+.footer > div:nth-child(4),
+.footer > div:nth-child(5) {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+.footer > div:nth-child(2) p,
+.footer > div:nth-child(3) p,
+.footer > div:nth-child(4) p,
+.footer > div:nth-child(5) p {
+  display: flex;
+  gap: 10px;
+}
+.footer > div:nth-child(2) h3,
+.footer > div:nth-child(4) h3,
+.footer > div:nth-child(5) h3 {
+  font-size: 20px;
+}
+.footer > div:nth-child(3) {
+  margin-top: 40px;
+}
+.footer > div:nth-child(1) p {
+  line-height: 2;
+}
